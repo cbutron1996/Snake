@@ -114,10 +114,6 @@ public class GUI extends Canvas implements Runnable, KeyListener {
         else if(snake.move != "Up" && snake.move != "Down" && e.getKeyCode() == KeyEvent.VK_DOWN) {
             snake.move("Down");
         }
-
-        if(e.getKeyCode() == KeyEvent.VK_SPACE) {
-            snake.tailLength++;
-        }
     }
 
     @Override
