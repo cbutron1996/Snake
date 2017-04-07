@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff89312b-c212-4f8b-a1c8-f9cc8c84417c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Snake/Block.class" afterPath="$PROJECT_DIR$/out/production/Snake/Block.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Snake/GUI.class" afterPath="$PROJECT_DIR$/out/production/Snake/GUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Snake/Snake.class" afterPath="$PROJECT_DIR$/out/production/Snake/Snake.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Snake/Test.class" afterPath="$PROJECT_DIR$/out/production/Snake/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Block.java" afterPath="$PROJECT_DIR$/src/Block.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI.java" afterPath="$PROJECT_DIR$/src/GUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Snake.java" afterPath="$PROJECT_DIR$/src/Snake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="$PROJECT_DIR$/src/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,6 +93,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Christian Butron &lt;cbutron1996@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -431,6 +430,14 @@
       <option name="presentableId" value="Default" />
       <updated>1490387674896</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added a scoreboard. Made it smoother sorta.">
+      <created>1491591071746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1491591071746</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -499,6 +506,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added a scoreboard. Made it smoother sorta." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a scoreboard. Made it smoother sorta." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
