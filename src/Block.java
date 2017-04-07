@@ -1,6 +1,4 @@
 import java.awt.*;
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by christianbutron on 3/24/17.
@@ -13,20 +11,20 @@ public class Block extends GameObject {
 
     public void update() {
         if(x < 0) {
-            x = GUI.WIDTH;
-            rect.x = GUI.WIDTH;
+            x = GUI.WIDTH - width;
+            rect.x = GUI.WIDTH - width;
         }
         else if(x >= GUI.WIDTH) {
             x = 0;
             rect.x = 0;
         }
         else if(y < 0) {
-            y = GUI.HEIGHT;
-            rect.y = GUI.HEIGHT;
+            y = y + GUI.HEIGHT - height;
+            rect.y = rect.y + GUI.HEIGHT - height;
         }
         else if(y >= GUI.HEIGHT) {
-            y = 0;
-            rect.y = 0;
+            y = y - GUI.HEIGHT;
+            rect.y = rect.y - GUI.HEIGHT;
         }
     }
 

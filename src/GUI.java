@@ -11,8 +11,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class GUI extends Canvas implements Runnable, KeyListener {
     private Thread thread;
     private JFrame frame;
-    private BufferStrategy bs = null;
-    private Graphics graphics = null;
+    private BufferStrategy bs;
+    private Graphics graphics;
 
     public static final int WIDTH = 960;
     public static final int HEIGHT = 540;
@@ -60,9 +60,9 @@ public class GUI extends Canvas implements Runnable, KeyListener {
         if(snake.head.rect.intersects(block.rect)) {
             int randX = ThreadLocalRandom.current().nextInt(0, WIDTH-20);
             int randY = ThreadLocalRandom.current().nextInt(0, HEIGHT-20);
-            block = new Block((randX / 20) * 20, (randY / 20) * 20, 20, 20);
+            block = new Block((randX / 20) * 20, (randY / 20) * 20, 20, 20); // don't mind this catastrophe, this just to make things aligned
 
-            snake.tailLength++;
+            snake.tailLength += 5;
         }
         snake.update();
         block.update();
@@ -79,6 +79,10 @@ public class GUI extends Canvas implements Runnable, KeyListener {
 
         graphics.setColor(Color.red);
         block.draw(graphics);
+
+        graphics.setColor(Color.white);
+        graphics.setFont(new Font("Times New Roman", Font.BOLD, 12));
+        graphics.drawString("Score: " + snake.tailLength, 800, 20);
     }
 
     @Override
@@ -90,7 +94,7 @@ public class GUI extends Canvas implements Runnable, KeyListener {
 
             Thread.currentThread();
             try {
-                thread.sleep(100);
+                thread.sleep(80);
             } catch(InterruptedException e) { }
         }
     }

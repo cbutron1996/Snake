@@ -22,6 +22,9 @@ public class Snake {
 
     public void move(String move) {
         this.move = move;
+    }
+
+    public void move() {
         int lastX = head.x;
         int lastY = head.y;
 
@@ -40,20 +43,21 @@ public class Snake {
         }
 
         tails.add(new Block(lastX, lastY, 20, 20));
-        if(tails.size() > tailLength)
+        if(tails.size() > tailLength) {
             tails.remove(0);
-    }
-
-    public void move() {
-        move(this.move);
+        }
     }
 
     public void update() {
-        move();
-        head.update();
         for(Block tail : tails) {
+            if(tail.rect.intersects(head.rect)) {
+                Test.endGame();
+                return;
+            }
             tail.update();
         }
+        move();
+        head.update();
     }
 
     public void draw(Graphics g) {
